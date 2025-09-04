@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.apache.commons.lang3.StringUtils;
 
 @RequestMapping("/farms")
 @RestController
 public class FarmController {
-//deneme salak sacma gelisiguzel coommmentler
 
+	// todo: finish this class
+	private final FarmService farmService;
 
-public FarmController(FarmService farmService) {
+	public FarmController(FarmService farmService) {
 		this.farmService = farmService;
 	}
 
@@ -25,10 +25,8 @@ public FarmController(FarmService farmService) {
 	}
 
 	@GetMapping("/{farmId}")
-	public FarmEntity getFarmById(@PathVariable Integer farmId) {
+	public FarmEntity getFarmById(@PathVariable Long farmId) {
 	//todo: do whatever you want with farmId
 	return farmService.findById(farmId);
 	}
-
-	private final FarmService farmService;
 }

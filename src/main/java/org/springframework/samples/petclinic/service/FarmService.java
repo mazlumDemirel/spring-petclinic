@@ -4,7 +4,6 @@ import java.util.Collection;
 import org.springframework.samples.petclinic.model.FarmEntity;
 import org.springframework.samples.petclinic.repository.FarmRepository;
 import org.springframework.stereotype.Service;
-import org.apache.commons.lang3.ApacheUtils;
 
 @Service
 public class FarmService {
