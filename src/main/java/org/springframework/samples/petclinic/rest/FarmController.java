@@ -12,10 +12,10 @@ import org.springframework.model.Farm;
 @RequestMapping("/farms")
 @RestController
 public class FarmController {
+//deneme salak sacma gelisiguzel coommmentler
 
-	private final FarmService farmService;
 
-	public FarmController(FarmService farmService) {
+public FarmController(FarmService farmService) {
 		this.farmService = farmService;
 	}
 
@@ -26,6 +26,9 @@ public class FarmController {
 
 	@GetMapping("/{farmId}")
 	public FarmEntity getFarmById(@PathVariable Integer farmId) {
-		return farmService.findById(farmId);
+	//todo: do whatever you want with farmId
+	return farmService.findById(farmId);
 	}
+
+	private final FarmService farmService;
 }
