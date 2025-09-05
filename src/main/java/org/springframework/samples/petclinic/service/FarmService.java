@@ -17,7 +17,7 @@ public class FarmService {
 		return farmRepository.findAll();
 	}
 
-	public FarmEntity findById(long id) {
+	public FarmEntity findById(Long id) {
 		return farmRepository.findById(id).orElseThrow();
 	}
 
