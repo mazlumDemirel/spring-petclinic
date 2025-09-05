@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.samples.petclinic.MySqlIntegrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-09-05T15:46:13.221Z" hostname="pkrvm7jw40e0xgp" time="1.256">
+  <properties/>
+  <testcase name="testFindAll()" classname="org.springframework.samples.petclinic.MySqlIntegrationTests" time="0.506"/>
+  <testcase name="testOwnerDetails()" classname="org.springframework.samples.petclinic.MySqlIntegrationTests" time="0.748"/>
+  <system-out><![CDATA[15:45:37.499 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.MySqlIntegrationTests]: MySqlIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:45:37.517 [Test worker] INFO tc.mysql:9.2 -- Pulling docker image: mysql:9.2. Please be patient; this may take some time but only needs to be done once.
+15:45:38.305 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Starting to pull image
+15:45:38.307 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+15:45:38.800 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  9 pending,  1 downloaded,  0 extracted, (885 bytes/? MB)
+15:45:38.913 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  8 pending,  2 downloaded,  0 extracted, (960 KB/? MB)
+15:45:39.202 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  7 pending,  3 downloaded,  0 extracted, (9 MB/? MB)
+15:45:39.243 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  6 pending,  4 downloaded,  0 extracted, (14 MB/? MB)
+15:45:39.468 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  5 pending,  5 downloaded,  0 extracted, (29 MB/? MB)
+15:45:39.743 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  4 pending,  6 downloaded,  0 extracted, (59 MB/? MB)
+15:45:39.752 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  3 pending,  7 downloaded,  0 extracted, (59 MB/? MB)
+15:45:40.053 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  2 pending,  8 downloaded,  0 extracted, (83 MB/? MB)
+15:45:40.170 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  0 extracted, (93 MB/? MB)
+15:45:40.987 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  1 extracted, (122 MB/? MB)
+15:45:41.299 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  2 extracted, (138 MB/? MB)
+15:45:41.354 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  3 extracted, (138 MB/? MB)
+15:45:41.652 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  4 extracted, (162 MB/? MB)
+15:45:41.661 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  5 extracted, (162 MB/? MB)
+15:45:41.673 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  6 extracted, (162 MB/? MB)
+15:45:42.595 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  7 extracted, (211 MB/? MB)
+15:45:42.614 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  1 pending,  9 downloaded,  8 extracted, (211 MB/? MB)
+15:45:43.002 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  0 pending, 10 downloaded,  8 extracted, (229 MB/229 MB)
+15:45:50.088 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  0 pending, 10 downloaded,  9 extracted, (229 MB/229 MB)
+15:45:50.141 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pulling image layers:  0 pending, 10 downloaded, 10 extracted, (229 MB/229 MB)
+15:45:50.146 [docker-java-stream--479351180] INFO tc.mysql:9.2 -- Pull complete. 10 layers, pulled in 11s (downloaded 229 MB at 20 MB/s)
+15:45:50.146 [Test worker] INFO tc.mysql:9.2 -- Image mysql:9.2 pull took PT12.629318931S
+15:45:50.251 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.MySqlIntegrationTests
+15:45:50.327 [Test worker] INFO tc.mysql:9.2 -- Creating container for image: mysql:9.2
+15:45:50.369 [Test worker] INFO tc.mysql:9.2 -- Container mysql:9.2 is starting: a342cd2507614955feb0db2850ceedb2c6354507e0fc630bc5a3e24d6c67978b
+15:45:50.538 [Test worker] INFO tc.mysql:9.2 -- Waiting for database connection to become available at jdbc:mysql://localhost:32769/test using query 'SELECT 1'
+15:45:58.109 [Test worker] INFO tc.mysql:9.2 -- Container mysql:9.2 started in PT7.782268748S
+15:45:58.110 [Test worker] INFO tc.mysql:9.2 -- Container is started (JDBC URL: jdbc:mysql://localhost:32769/test)
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 3.5.0
+
+
+2025-09-05T15:45:58.439Z  INFO 4343 --- [    Test worker] o.s.s.petclinic.MySqlIntegrationTests    : Starting MySqlIntegrationTests using Java 17.0.16 with PID 4343 (started by runner in /home/runner/work/spring-petclinic/spring-petclinic)
+2025-09-05T15:45:58.440Z  INFO 4343 --- [    Test worker] o.s.s.petclinic.MySqlIntegrationTests    : The following 1 profile is active: "mysql"
+2025-09-05T15:45:59.371Z  INFO 4343 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T15:45:59.443Z  INFO 4343 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2025-09-05T15:46:00.062Z  INFO 4343 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-09-05T15:46:00.074Z  INFO 4343 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-05T15:46:00.075Z  INFO 4343 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-05T15:46:00.128Z  INFO 4343 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-05T15:46:00.130Z  INFO 4343 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2025-09-05T15:46:00.343Z  INFO 4343 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T15:46:00.519Z  INFO 4343 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e75bef1
+2025-09-05T15:46:00.520Z  INFO 4343 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T15:46:00.996Z  INFO 4343 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T15:46:01.040Z  INFO 4343 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-05T15:46:01.072Z  INFO 4343 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T15:46:01.345Z  INFO 4343 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T15:46:01.450Z  INFO 4343 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-05T15:46:02.406Z  INFO 4343 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-05T15:46:02.408Z  INFO 4343 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-05T15:46:02.423Z  INFO 4343 --- [    Test worker] tc.mysql:9.2                             : Creating container for image: mysql:9.2
+2025-09-05T15:46:02.466Z  INFO 4343 --- [    Test worker] tc.mysql:9.2                             : Container mysql:9.2 is starting: 55e29a19d0b618859eb2f667b9c6d46c07a252d2b6b5d8ffa96bf541faeae25c
+2025-09-05T15:46:02.674Z  INFO 4343 --- [    Test worker] tc.mysql:9.2                             : Waiting for database connection to become available at jdbc:mysql://localhost:32770/test using query 'SELECT 1'
+2025-09-05T15:46:11.134Z  INFO 4343 --- [    Test worker] tc.mysql:9.2                             : Container mysql:9.2 started in PT8.711386914S
+2025-09-05T15:46:11.134Z  INFO 4343 --- [    Test worker] tc.mysql:9.2                             : Container is started (JDBC URL: jdbc:mysql://localhost:32770/test)
+2025-09-05T15:46:11.441Z  INFO 4343 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-05T15:46:12.494Z  INFO 4343 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2025-09-05T15:46:12.868Z  INFO 4343 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 36753 (http) with context path '/'
+2025-09-05T15:46:12.889Z  INFO 4343 --- [    Test worker] o.s.s.petclinic.MySqlIntegrationTests    : Started MySqlIntegrationTests in 14.745 seconds (process running for 40.123)
+2025-09-05T15:46:13.920Z  INFO 4343 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-05T15:46:13.921Z  INFO 4343 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-05T15:46:13.922Z  INFO 4343 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

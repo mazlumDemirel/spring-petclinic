@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-05T15:46:31.633Z" hostname="pkrvm7jw40e0xgp" time="0.114">
+  <properties/>
+  <testcase name="testProcessCreationFormWithBlankName()" classname="org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors" time="0.027"/>
+  <testcase name="testInitUpdateForm()" classname="org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors" time="0.017"/>
+  <testcase name="testProcessCreationFormWithMissingPetType()" classname="org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors" time="0.025"/>
+  <testcase name="testProcessCreationFormWithDuplicateName()" classname="org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors" time="0.017"/>
+  <testcase name="testProcessCreationFormWithInvalidBirthDate()" classname="org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors" time="0.018"/>
+  <system-out><![CDATA[2025-09-05T15:46:31.602Z  INFO 4343 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors]: ProcessCreationFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-05T15:46:31.627Z  INFO 4343 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
