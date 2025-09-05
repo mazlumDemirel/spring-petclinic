@@ -1,0 +1,26 @@
+# Build artifacts
+target/
+build/
+.gradle/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# H2 database files
+*.db
+*.trace.db
+*.lock.db
+
+# JaCoCo coverage reports
+jacoco.exec
