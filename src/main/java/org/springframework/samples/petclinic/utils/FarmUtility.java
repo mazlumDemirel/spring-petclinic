@@ -12,7 +12,7 @@ public class FarmUtility {
 		DoAnotherThing,
 	}
 
-	public static void main(String[] args) {
+	static void main(String[] args) {
 		Options choice = Options.valueOf(args[0]);
 		Options choice1 = Options.valueOf(args[1]);
 		if (choice.equals(DoEverything)) {
