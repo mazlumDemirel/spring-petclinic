@@ -13,8 +13,20 @@ public class FarmUtility {
 	}
 
 	public static void main(String[] args) {
-		Options choice = Options.valueOf(args[0]);
-		Options choice1 = Options.valueOf(args[1]);
+	static void main(String[] args) {
+		Options choice;
+		try {
+			if (args.length == 0) {
+				System.err.println("Error: No option provided. Please specify one of: " + 
+					String.join(", ", getEnumValues()));
+				return;
+			}
+			choice = Options.valueOf(args[0]);
+		} catch (IllegalArgumentException e) {
+			System.err.println("Error: Invalid option '" + args[0] + "'. Valid options are: " + 
+				String.join(", ", getEnumValues()));
+			return;
+		}
 		if (choice.equals(DoEverything)) {
 			doSomething();
 			doAnother();
