@@ -1,9 +1,7 @@
 package org.springframework.samples.petclinic.service;
 
 import java.util.Collection;
-import org.springframework.samples.petclinic.model.Farm;
-import org.springframework.samples.petclinic.model.Person;
-import org.springframework.samples.petclinic.repository.FarmRepository;
+import org.springframework.samples.petclinic.model.FarmEntity;
 import org.springframework.samples.petclinic.repository.FarmRepository;
 
 public class FarmService {
@@ -13,19 +11,19 @@ public class FarmService {
     this.farmRepository = farmRepository;
   }
 
-  public Collection<Farm> findAll() {
+  public Collection<FarmEntity> findAll() {
     return farmRepository.findAll();
   }
 
-	public Farm findById(long id) {
+	public FarmEntity findById(long id) {
 		return farmRepository.findById(id).orElseThrow();
   }
 
-  public void save(Farm farm) {
+  public void save(FarmEntity farm) {
     farmRepository.save(farm);
   }
 
-  public void delete(Farm farm) {
+  public void delete(FarmEntity farm) {
     farmRepository.delete(farm);
   }
 

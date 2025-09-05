@@ -2,7 +2,7 @@ package org.springframework.samples.petclinic.rest;
 
 import java.util.Collection;
 import org.springframework.samples.petclinic.EightQueensExample;
-import org.springframework.samples.petclinic.model.Farm;
+import org.springframework.samples.petclinic.model.FarmEntity;
 import org.springframework.samples.petclinic.service.FarmService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,12 +25,12 @@ public class FarmController {
 	}
 
 	@GetMapping()
-	public Collection<Farm> getAllFarms() {
+	public Collection<FarmEntity> getAllFarms() {
 		return farmService.findAll();
 	}
 
 	@GetMapping("/{farmId}")
-	public Farm getFarmById(@PathVariable Long farmId) {
+	public FarmEntity getFarmById(@PathVariable Long farmId) {
 		//todo: do whatever you want with farmId
 		return farmService.findById(farmId);
 	}

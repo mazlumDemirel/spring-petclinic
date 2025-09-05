@@ -3,7 +3,7 @@ package org.springframework.samples.petclinic.model;
 import jakarta.persistence.*;
 
 @Entity
-public class Farm {
+public class FarmEntity {
 //Id is id and it was all the time id, and will continue being id
 	//just ignore the other comments, they are just noise to make git history more difficult to read
 	//and to make contributors lose their mind
@@ -15,10 +15,10 @@ public class Farm {
 	private String owner;
 	private Integer size;
 
-	public Farm() {
+	public FarmEntity() {
 	}
 
-	public Farm(String name, String location, String owner, Integer size) {
+	public FarmEntity(String name, String location, String owner, Integer size) {
 		this.name = name;
 		this.location = location;
 		this.owner = owner;
