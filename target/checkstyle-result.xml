@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.25.0">
+<file name="/home/runner/work/spring-petclinic/spring-petclinic/src/main/resources/static/resources/css/typography.css">
+</file>
+<file name="/home/runner/work/spring-petclinic/spring-petclinic/src/main/resources/static/resources/css/header.css">
+</file>
+<file name="/home/runner/work/spring-petclinic/spring-petclinic/src/main/resources/static/resources/css/petclinic.css">
+</file>
+<file name="/home/runner/work/spring-petclinic/spring-petclinic/src/main/resources/static/resources/css/responsive.css">
+</file>
+</checkstyle>

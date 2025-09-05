@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.samples.petclinic.owner.PetValidatorTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-05T15:48:28.238Z" hostname="pkrvm7jw40e0xgp" time="0.003">
+  <properties/>
+  <testcase name="testValidate()" classname="org.springframework.samples.petclinic.owner.PetValidatorTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
