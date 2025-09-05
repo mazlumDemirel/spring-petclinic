@@ -26,5 +26,9 @@ public class FarmEntity {
 	}
 
 	public FarmEntity(String name, String location, String ownerName, String phoneNumber) {
+		this.name = name;
+		this.location = location;
+		this.ownerName = ownerName;
+		this.phoneNumber = phoneNumber;
 	}
 }
