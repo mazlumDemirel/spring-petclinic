@@ -19,9 +19,12 @@ public class FarmUtility {
 			doSomething();
 			doAnother();
 		}
-		if (choice.equals(DoSomething)) {
+		else if (choice.equals(DoSomething)) {
 			doSomething();
 			if (choice1.equals(DoAnotherThing)) {
+				doAnother();
+			}
+			if(!choice.equals(DoSomething) || choice1.equals(DoAnotherThing)){
 				doAnother();
 			}
 		} else if (choice.equals(DoAnotherThing)) {
